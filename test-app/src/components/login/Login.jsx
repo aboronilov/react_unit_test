@@ -19,10 +19,12 @@ export default function Login() {
     } catch {
       setError(true);
     }
+    setLoading(false)
   };
 
   return (
     <div className="container">
+      <span className="user">{user.name}</span>
       <form action="">
         <input
           type="text"
